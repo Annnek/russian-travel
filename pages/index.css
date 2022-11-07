@@ -19,144 +19,88 @@
 @import url(../blocks/map/__image/_caption/map__image_caption.css);
 
 /* DESCRIPTION */
+@import url(../blocks/description/description.css);
+@import url(../blocks/description/__title/description__title.css);
+@import url(../blocks/description/__text/description__text.css);
+@import url(../blocks/table/table.css);
+@import url(../blocks/table/__statistic/table__statistic.css);
+@import url(../blocks/table/__statistic/_span/table__statistic_span_bold.css);
 
-.description {
-  padding: 28px 0;
-  min-height: 429px;
+/* GALLERY */
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/gallery/__image/gallery__image.css);
+
+/* PLACES */
+.places {
+  max-width: 984px;
+  margin: 0 auto;
 }
 
-.description__title {
-  font-size: 54px;
-  line-height: 58px;
-  font-weight: 900;
-  margin: 0 0 40px;
-  text-align: start;
+.places__card {
+  display: grid;
+  grid-template-columns: 460px 484px;
+  grid-template-rows: fit-content(152px) 460px;
+  gap: 48px 40px;
+  margin-bottom: 80px;
 }
 
-.description__text {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
-  max-width: 690px;
-  margin: 0;
-  text-align: justify;
+.places__card:last-of-type {
+  margin-bottom: 0;
 }
 
-.table {
-  padding-left: 0;
-  margin: 33px 0 0;
-  list-style-type: none;
-}
-
-.table__statistic {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
-}
-
-.table__statistic_span_bold {
-  font-weight: 700;
-}
-
-/* COVER SECTION */
-/* @import url(../blocks/cover/cover.css);
-@import url(../blocks/cover/__link/cover__link.css);
-@import url(../blocks/cover/__title/cover__title.css); */
-
-.cover {
-  padding: 0 48px;
-}
-
-@media screen and (max-width: 1024px) {
-  .cover {
-    padding: 0;
-  }
-}
-
-.cover__link {
-  min-height: 740px;
-  box-sizing: border-box;
-  background-image: url("../../../images/cover-trains.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  z-index: 0; /*контекст наложения*/
-}
-
-@media screen and (max-width: 1024px) {
-  .cover__link {
-    min-height: 640px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .cover__link {
-    min-height: 480px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .cover__link {
-    min-height: 200px;
-  }
-}
-
-.cover__link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #2a2c2f;
-  opacity: 0.3;
-  z-index: -1;
-  transition: opacity 0.3s ease;
-}
-
-.cover__link:hover::before {
-  opacity: 0.8;
-}
-
-.cover__title {
+.places__title {
   font-size: 72px;
   line-height: 76px;
   font-weight: 900;
-  max-width: 560px;
-  margin: 0 0 32px;
-  text-align: center;
+  margin: 0;
+  align-self: end;
 }
 
-@media screen and (max-width: 320px) {
-  .cover__title {
-    font-size: 32px;
-    line-height: 35px;
-    font-weight: 900;
-    max-width: 288px;
-    margin: 0 0 16px;
-  }
+.places__image {
+  width: 100%;
+  align-self: start;
 }
 
-.cover__subtitle {
+.places__url {
+  align-self: end;
+}
+
+.places__url-heading {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #aaa;
+  margin: 0;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+
+places__link {
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
-  max-width: 360px;
-  margin: 0;
-  text-align: center;
+  color: #fff;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 320px) {
-  .cover__subtitle {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
-    max-width: 288px;
-  }
+.places__paragraph {
+  align-self: start;
 }
+
+.places__text {
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.places__text:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+/* COVER SECTION */
+@import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__link/cover__link.css);
+@import url(../blocks/cover/__title/cover__title.css);
+@import url(../blocks/cover/__subtitle/cover__subtitle.css);

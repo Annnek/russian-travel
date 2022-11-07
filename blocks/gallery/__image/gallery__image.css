@@ -1,6 +1,6 @@
-.map__image {
+.gallery__image {
+  display: block;
   width: 100%;
   object-fit: cover;
   object-position: center;
-  border: 1px solid red;
 }
