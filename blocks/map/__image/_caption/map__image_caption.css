@@ -1,0 +1,9 @@
+.map__image_caption {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: start;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 8px 0 0;
+}

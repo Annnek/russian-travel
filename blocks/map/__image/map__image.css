@@ -1,0 +1,7 @@
+.map__image {
+  width: 984px;
+  height: 615px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid red;
+}

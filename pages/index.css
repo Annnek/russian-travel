@@ -1,44 +1,162 @@
+@import url(../vendor/fonts/fonts.css);
 @import url(../vendor/normalize.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/page/__container/page__container.css);
 
-@font-face {
-  font-family: "Inter";
-  src: url(../fonts/Inter-Regular.woff2) format("woff2"),
-    url(../fonts/Inter-Regular.woff) format("woff"),
-    url(../fonts/Inter-Regular.otf) format("opentype");
+/* HEADER SECTION */
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/logo/logo.css);
+@import url(../blocks/header/__link/_lang/header__link_lang.css);
+@import url(../blocks/header/__link/_underline/header__link_underline.css);
+
+/* MAP SECTION */
+@import url(../blocks/map/map.css);
+@import url(../blocks/map/__title/map__title.css);
+@import url(../blocks/map/__subtitle/map__subtitle.css);
+@import url(../blocks/map/__lead/map__lead.css);
+@import url(../blocks/map/__image/map__image.css);
+@import url(../blocks/map/__image/_caption/map__image_caption.css);
+
+/* DESCRIPTION */
+
+.description {
+  padding: 28px 0;
+  min-height: 429px;
 }
 
-.page {
-  max-width: 1280px;
-  min-width: 320px;
-  margin: 0 auto; /* технология выравнивания или построения сетки */
-  background-color: #2a2c2f;
-  font-family: "Inter", sans-serif;
-  color: #fff;
+.description__title {
+  font-size: 54px;
+  line-height: 58px;
+  font-weight: 900;
+  margin: 0 0 40px;
+  text-align: start;
 }
 
-.header {
-  height: 52px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 46px 0;
-}
-
-.logo {
-  background-image: url(../images/logo-header.svg);
-  width: 176px;
-  height: 52px;
-  margin-left: 48px;
-}
-
-.header__link {
-  display: flex;
-  gap: 18px;
-}
-
-.header__link_lang {
-  color: #fff;
-  font-size: 24px;
-  line-height: 28px;
+.description__text {
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 400;
+  max-width: 690px;
+  margin: 0;
+  text-align: justify;
+}
+
+.table {
+  padding-left: 0;
+  margin: 33px 0 0;
+  list-style-type: none;
+}
+
+.table__statistic {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.table__statistic_span_bold {
+  font-weight: 700;
+}
+
+/* COVER SECTION */
+/* @import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__link/cover__link.css);
+@import url(../blocks/cover/__title/cover__title.css); */
+
+.cover {
+  padding: 0 48px;
+}
+
+@media screen and (max-width: 1024px) {
+  .cover {
+    padding: 0;
+  }
+}
+
+.cover__link {
+  min-height: 740px;
+  box-sizing: border-box;
+  background-image: url("../../../images/cover-trains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  z-index: 0; /*контекст наложения*/
+}
+
+@media screen and (max-width: 1024px) {
+  .cover__link {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__link {
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover__link {
+    min-height: 200px;
+  }
+}
+
+.cover__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #2a2c2f;
+  opacity: 0.3;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.cover__link:hover::before {
+  opacity: 0.8;
+}
+
+.cover__title {
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 900;
+  max-width: 560px;
+  margin: 0 0 32px;
+  text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  .cover__title {
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 900;
+    max-width: 288px;
+    margin: 0 0 16px;
+  }
+}
+
+.cover__subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  max-width: 360px;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    max-width: 288px;
+  }
 }

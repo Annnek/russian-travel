@@ -7,29 +7,32 @@
     <link rel="stylesheet" href="./pages/index.css" />
     <title>Путешествия по России</title>
   </head>
-  <body>
-    <div class="page">
+  <body class="page">
+    <div class="page__container">
       <!-- HEADER SECTION -->
       <header class="header">
         <div class="logo"></div>
         <div class="header__link">
           <a class="header__link_lang" href="#">Ru</a>
-          <a class="header__link_lang" href="#">Eng</a>
+          <a class="header__link_lang header__link_underline" href="#">Eng</a>
         </div>
       </header>
 
       <!-- MAP SECTION -->
       <section class="map">
-        <h1 class="map__title">Путешествия по России</h1>
+        <!-- чтобы переносилось правильно по словам - &nbsp; неразрывный пробел или span и классу white-space:nowrap;-->
+        <h1 class="map__title">Путешествия по&nbsp;России</h1>
         <h2 class="map__subtitle">
-          Настоящая страна не в выпусках новостей, а здесь.
+          Настоящая страна не в выпусках новостей,&nbsp;а&nbsp;здесь.
         </h2>
-        <img
-          class="map__pic"
-          src="./images/lead-polka.jpg"
-          alt="Человек лежит на полке в поезде и сверху показана схема маршрута поездки"
-        />
-        <p class="map__pic_description">ваша полка — верхняя</p>
+        <div class="map__lead">
+          <img
+            class="map__image"
+            src="./images/lead-polka.jpg"
+            alt="Человек лежит на полке в поезде и сверху показана схема маршрута поездки"
+          />
+          <p class="map__image_caption">ваша полка — верхняя</p>
+        </div>
       </section>
 
       <!-- DESCRIPTION -->
@@ -37,31 +40,44 @@
         <article>
           <h2 class="description__title">Чего мы там не видели?</h2>
           <p class="description__text">
-            По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только
-            36% планируют провести отпуск в родной стране. Мол, чего мы тут,
-            дома, не видели? На самом деле, Россия — это целая вселенная с
-            ласковым морем юга, густыми лесами Саян и суровыми льдами плато
-            Путорана. А ещё увидеть все эти красоты можно без миллионов на
-            счету, загранпаспорта и многочасовых перелетов. Как, например, Вера
-            Башмакова — смелая молодая мама, которая взяла в охапку троих детей,
-            усадила их в свою «Ладу» и проехала 20 тысяч километров по родной
-            стране. Мы выбрали и описали некоторые интересные места, достойные
-            вашего отпуска.
+            По&nbsp;опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать,
+            но&nbsp;только&nbsp;36% планируют провести отпуск в&nbsp;родной
+            стране. Мол, чего мы&nbsp;тут, дома, не&nbsp;видели? На&nbsp;самом
+            деле, Россия&nbsp;&mdash; это целая вселенная с&nbsp;ласковым морем
+            юга, густыми лесами Саян и&nbsp;суровыми льдами плато Путорана.
+            А&nbsp;ещё увидеть все эти красоты можно без миллионов
+            на&nbsp;счету, загранпаспорта и&nbsp;многочасовых перелетов. Как,
+            например, Вера Башмакова&nbsp;&mdash; смелая молодая мама, которая
+            взяла в&nbsp;охапку троих детей, усадила их&nbsp;в&nbsp;свою
+            &laquo;Ладу&raquo; и&nbsp;проехала 20&nbsp;тысяч километров
+            по&nbsp;родной стране. Мы&nbsp;выбрали и&nbsp;описали некоторые
+            интересные места, достойные вашего отпуска.
           </p>
-          <ul>
-            <li class="description__statistic">
-              <span>Часовых поясов</span> 11
+          <ul class="table">
+            <li class="table__statistic">
+              <span class="table__statistic_span_bold">Часовых поясов</span> 11
             </li>
-            <li class="description__statistic">
-              <span>Объектов природного наследия ЮНЕСКО</span> 12
+            <li class="table__statistic">
+              <span class="table__statistic_span_bold"
+                >Объектов природного наследия ЮНЕСКО</span
+              >
+              12
             </li>
-            <li class="description__statistic">
-              <span>Объектов культурного наследия ЮНЕСКО</span> 16
+            <li class="table__statistic">
+              <span class="table__statistic_span_bold"
+                >Объектов культурного наследия ЮНЕСКО</span
+              >
+              16
             </li>
-            <li class="description__statistic">
-              <span>Природных заповедников</span> 105
+            <li class="table__statistic">
+              <span class="table__statistic_span_bold"
+                >Природных заповедников</span
+              >
+              105
             </li>
-            <li class="description__statistic"><span>Аэропортов</span> 241</li>
+            <li class="table__statistic">
+              <span class="table__statistic_span_bold">Аэропортов</span> 241
+            </li>
           </ul>
         </article>
       </section>
@@ -132,12 +148,12 @@
 
       <!-- PLACES -->
       <section class="places">
-        <div class="places__card">
+        <article class="places__card">
           <h2 class="places__title">Куршская коса</h2>
           <img class="places__image" src="./images/place-kosa.jpg" alt="" />
           <p class="places__url-heading">Url</p>
           <a class="places__link" href="http://">park-kosa.ru</a>
-          <article class="places__paragraph">
+          <div class="places__paragraph">
             <p class="places__text">
               Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных
               горизонта — спокойного Куршского залива с одной стороны и
@@ -152,14 +168,14 @@
               исключает суету, окуная в спокойствие природы и запах стального,
               прохладного моря.
             </p>
-          </article>
-        </div>
-        <div class="places__card">
+          </div>
+        </article>
+        <article class="places__card">
           <h2 class="places__title">Кольский</h2>
           <img class="places__image" src="./images/place-kolsky.jpg" alt="" />
           <p class="places__url-heading">Url</p>
           <a class="places__link" href="#">National Geographic</a>
-          <article class="places__paragraph">
+          <div class="places__paragraph">
             <p class="places__text">
               Почти весь полуостров находится за Полярным кругом. Саамская
               тундра, от которой на юг — тайга, а на север — Ледовитый океан,
@@ -174,14 +190,14 @@
               Но ваша мечта увидеть северное сияние начинает сбываться с билетом
               в Мурманск.
             </p>
-          </article>
-        </div>
-        <div class="places__card">
+          </div>
+        </article>
+        <article class="places__card">
           <h2 class="places__title">Алтай</h2>
           <img class="places__image" src="./images/place-altai.jpg" alt="" />
           <p class="places__url-heading">Url</p>
           <a class="places__link" href="#">Facebook</a>
-          <article class="places__paragraph">
+          <div class="places__paragraph">
             <p class="places__text">
               Алтай — одно из красивейших мест в России. В первую очередь из-за
               гор: если ехать вдоль хребта, вы увидите склоны, усыпанные
@@ -195,8 +211,8 @@
               Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся
               косули. И знаменитые манулы — тоже обитатели Алтайского края.
             </p>
-          </article>
-        </div>
+          </div>
+        </article>
         <div class="places__card">
           <h2 class="places__title">Зимний Байкал</h2>
           <img
@@ -242,12 +258,19 @@
         </div>
       </section>
 
+      <!-- COVER SECTION -->
       <section class="cover">
-        <h2 class="cover__title">До Байкала «на собаках»</h2>
-        <h3 class="cover__subtitle">
-          По мотивам учебной темы о Транссибе — путешествие от столицы до
-          Байкала на электричках.
-        </h3>
+        <a
+          class="cover__link"
+          href="https://stampsy.com/na-elektrichkakh-do-baikala/"
+          target="_blank"
+        >
+          <h2 class="cover__title">До Байкала «на собаках»</h2>
+          <h3 class="cover__subtitle">
+            По&nbsp;мотивам учебной темы о&nbsp;Транссибе&nbsp;&mdash;
+            путешествие от&nbsp;столицы до&nbsp;Байкала на&nbsp;электричках.
+          </h3>
+        </a>
       </section>
       <footer class="footer">
         <ul class="footer__links">
