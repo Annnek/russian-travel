@@ -1,5 +1,5 @@
-@import url(../vendor/fonts/fonts.css);
 @import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/page/__container/page__container.css);
 
@@ -31,76 +31,24 @@
 @import url(../blocks/gallery/__image/gallery__image.css);
 
 /* PLACES */
-.places {
-  max-width: 984px;
-  margin: 0 auto;
-}
-
-.places__card {
-  display: grid;
-  grid-template-columns: 460px 484px;
-  grid-template-rows: fit-content(152px) 460px;
-  gap: 48px 40px;
-  margin-bottom: 80px;
-}
-
-.places__card:last-of-type {
-  margin-bottom: 0;
-}
-
-.places__title {
-  font-size: 72px;
-  line-height: 76px;
-  font-weight: 900;
-  margin: 0;
-  align-self: end;
-}
-
-.places__image {
-  width: 100%;
-  align-self: start;
-}
-
-.places__url {
-  align-self: end;
-}
-
-.places__url-heading {
-  font-size: 12px;
-  line-height: 20px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  color: #aaa;
-  margin: 0;
-  padding-bottom: 12px;
-  text-transform: uppercase;
-}
-
-places__link {
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #fff;
-  text-decoration: none;
-}
-
-.places__paragraph {
-  align-self: start;
-}
-
-.places__text {
-  font-size: 18px;
-  line-height: 29px;
-  font-weight: 400;
-  margin: 0;
-}
-
-.places__text:not(:last-child) {
-  margin-bottom: 26px;
-}
+@import url(../blocks/places/places.css);
+@import url(../blocks/places/__card/places__card.css);
+@import url(../blocks/places/__title/places__title.css);
+@import url(../blocks/places/__image/places__image.css);
+@import url(../blocks/places/__url/places__url.css);
+@import url(../blocks/places/__url-heading/places__url-heading.css);
+@import url(../blocks/places/__link/places__link.css);
+@import url(../blocks/places/__paragraph/places__paragraph.css);
+@import url(../blocks/places/__text/places__text.css);
 
 /* COVER SECTION */
 @import url(../blocks/cover/cover.css);
 @import url(../blocks/cover/__link/cover__link.css);
 @import url(../blocks/cover/__title/cover__title.css);
 @import url(../blocks/cover/__subtitle/cover__subtitle.css);
+
+/* FOOTER SECTION */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__links/footer__links.css);
+@import url(../blocks/footer/__link/footer_link.css);
+@import url(../blocks/footer/__author/footer__author.css);
