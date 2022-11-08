@@ -1,3 +1,20 @@
 .map__lead {
   margin: 64px auto;
 }
+@media screen and (max-width: 1024px) {
+  .map__lead {
+    margin: 56px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map__lead {
+    margin: 56px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .map__lead {
+    margin: 40px 0;
+  }
+}

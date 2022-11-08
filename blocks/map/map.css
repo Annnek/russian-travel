@@ -1,6 +1,25 @@
 .map {
-  padding-top: 48px;
+  padding-top: 28px;
   max-width: 984px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .map {
+    max-width: 928px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map {
+    max-width: 768px;
+    padding: 48px 0 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .map {
+    max-width: 320px;
+  }
 }

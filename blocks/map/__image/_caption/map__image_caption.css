@@ -7,3 +7,14 @@
   text-transform: uppercase;
   margin: 8px 0 0;
 }
+@media screen and (max-width: 768px) {
+  .map__image_caption {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .map__image_caption {
+    padding-left: 16px;
+  }
+}
