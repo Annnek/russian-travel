@@ -2,10 +2,27 @@
   display: grid;
   grid-template-columns: 460px 484px;
   grid-template-rows: fit-content(152px) 460px;
+  grid-template-areas:
+    "title url"
+    "image paragraph";
   gap: 48px 40px;
   margin-bottom: 80px;
 }
 
 .places__card:last-of-type {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .places__card {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "url"
+      "image"
+      "paragraph";
+    gap: 32px;
+    margin-bottom: 50px;
+    align-items: start;
+  }
 }

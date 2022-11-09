@@ -6,5 +6,15 @@
 }
 
 .places__text:not(:last-child) {
-  margin-bottom: 26px;
+  margin-bottom: 27px;
+}
+
+@media screen and (max-width: 768px) {
+  .places__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .places__text:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }

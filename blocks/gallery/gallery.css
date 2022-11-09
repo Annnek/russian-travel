@@ -1,10 +1,9 @@
 .gallery {
-  padding: 92px 28px;
+  padding-top: 92px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  max-width: 1184px;
-  margin: 0 auto;
+  max-width: calc(100% - 2 * 48px);
 }
 
 @media screen and (max-width: 1024px) {
@@ -18,15 +17,15 @@
 @media screen and (max-width: 768px) {
   .gallery {
     max-width: 720px;
+    padding-top: 88px;
     grid-template-columns: repeat(2, 1fr);
-    padding: 88px 24px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .gallery {
     max-width: 288px;
+    padding-top: 64px;
     grid-template-columns: repeat(1, 1fr);
-    padding: 64px 16px;
   }
 }

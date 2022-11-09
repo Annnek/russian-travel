@@ -1,3 +1,4 @@
 .places__url {
   align-self: end;
+  grid-area: url;
 }

@@ -2,6 +2,7 @@
 @import url(../vendor/fonts/fonts.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/page/__container/page__container.css);
+@import url(../blocks/page/__content/page__content.css);
 
 /* HEADER SECTION */
 @import url(../blocks/header/header.css);
@@ -18,10 +19,10 @@
 @import url(../blocks/map/__image/map__image.css);
 @import url(../blocks/map/__image/_caption/map__image_caption.css);
 
-/* DESCRIPTION */
-@import url(../blocks/description/description.css);
-@import url(../blocks/description/__title/description__title.css);
-@import url(../blocks/description/__text/description__text.css);
+/* INTRO */
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/intro/__title/intro__title.css);
+@import url(../blocks/intro/__text/intro__text.css);
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/__statistic/table__statistic.css);
 @import url(../blocks/table/__statistic/_span/table__statistic_span_bold.css);

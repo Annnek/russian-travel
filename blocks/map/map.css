@@ -1,25 +1,25 @@
 .map {
   padding-top: 28px;
   max-width: 984px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  width: calc(100% - 48px * 2);
 }
 
 @media screen and (max-width: 1024px) {
   .map {
     max-width: 928px;
+    padding-top: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .map {
-    max-width: 768px;
-    padding: 48px 0 0;
+    max-width: 720px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .map {
-    max-width: 320px;
+    max-width: 288px;
+    padding-top: 32px;
   }
 }

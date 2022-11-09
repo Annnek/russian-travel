@@ -1,5 +1,5 @@
 .page__container {
   max-width: 1280px;
   min-width: 320px;
-  margin: 0 auto; /* технология выравнивания всего контента по центру */
+  margin: 0 auto; /* выравнивает весь контент по центру */
 }

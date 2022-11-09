@@ -5,20 +5,20 @@
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 64px;
 }
 
 @media screen and (max-width: 1024px) {
   .map__subtitle {
-    max-width: 928px;
-    padding-top: 20px;
+    padding-bottom: 56px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .map__subtitle {
-    font-size: 40px;
-    line-height: 44px;
-    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 20px;
     max-width: 288px;
+    padding-bottom: 40px;
   }
 }
