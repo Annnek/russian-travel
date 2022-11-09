@@ -6,20 +6,20 @@
 
 /* HEADER SECTION */
 @import url(../blocks/header/header.css);
-@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__links/header__links.css);
 @import url(../blocks/logo/logo.css);
-@import url(../blocks/header/__link/_lang/header__link_lang.css);
-@import url(../blocks/header/__link/_underline/header__link_underline.css);
+@import url(../blocks/header/__link-lang/header__link-lang.css);
+@import url(../blocks/header/__link-lang/_active/header__link-lang_active.css);
+@import url(../blocks/links/links.css);
 
-/* MAP SECTION */
-@import url(../blocks/map/map.css);
-@import url(../blocks/map/__title/map__title.css);
-@import url(../blocks/map/__subtitle/map__subtitle.css);
-@import url(../blocks/map/__lead/map__lead.css);
-@import url(../blocks/map/__image/map__image.css);
-@import url(../blocks/map/__image/_caption/map__image_caption.css);
+/* LEAD SECTION */
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/lead/__subtitle/lead__subtitle.css);
+@import url(../blocks/lead/__image/lead__image.css);
+@import url(../blocks/lead/__image/_caption/lead__image_caption.css);
 
-/* INTRO */
+/* INTRO SECTION */
 @import url(../blocks/intro/intro.css);
 @import url(../blocks/intro/__title/intro__title.css);
 @import url(../blocks/intro/__text/intro__text.css);
@@ -27,11 +27,11 @@
 @import url(../blocks/table/__statistic/table__statistic.css);
 @import url(../blocks/table/__statistic/_span/table__statistic_span_bold.css);
 
-/* GALLERY */
+/* GALLERY SECTION */
 @import url(../blocks/gallery/gallery.css);
 @import url(../blocks/gallery/__image/gallery__image.css);
 
-/* PLACES */
+/* PLACES SECTION */
 @import url(../blocks/places/places.css);
 @import url(../blocks/places/__card/places__card.css);
 @import url(../blocks/places/__title/places__title.css);

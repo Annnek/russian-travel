@@ -1,7 +1,7 @@
 .places__card {
   display: grid;
-  grid-template-columns: 460px 484px;
-  grid-template-rows: fit-content(152px) 460px;
+  grid-template-columns: minmax(320px, 460px) minmax(352px 484px);
+  grid-template-rows: fit-content(152px) fit-content(460px);
   grid-template-areas:
     "title url"
     "image paragraph";

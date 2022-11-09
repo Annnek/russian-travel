@@ -1,24 +1,24 @@
-.map {
+.lead {
   padding-top: 28px;
   max-width: 984px;
   width: calc(100% - 48px * 2);
 }
 
 @media screen and (max-width: 1024px) {
-  .map {
+  .lead {
     max-width: 928px;
     padding-top: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .map {
+  .lead {
     max-width: 720px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .map {
+  .lead {
     max-width: 288px;
     padding-top: 32px;
   }
