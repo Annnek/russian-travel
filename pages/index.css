@@ -25,7 +25,7 @@
 @import url(../blocks/intro/__text/intro__text.css);
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/__statistic/table__statistic.css);
-@import url(../blocks/table/__statistic/_span/table__statistic_span.css);
+@import url(../blocks/table/__span-accent/table__span-accent.css);
 
 /* GALLERY SECTION */
 @import url(../blocks/gallery/gallery.css);
