@@ -2,8 +2,3 @@
   align-self: start;
   grid-area: paragraph;
 }
-@media screen and (max-width: 320px) {
-  .places__paragraph {
-    padding: 0 16px;
-  }
-}
