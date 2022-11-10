@@ -17,7 +17,7 @@
 @import url(../blocks/lead/__title/lead__title.css);
 @import url(../blocks/lead/__subtitle/lead__subtitle.css);
 @import url(../blocks/lead/__image/lead__image.css);
-@import url(../blocks/lead/__image/_caption/lead__image_caption.css);
+@import url(../blocks/lead/__image-caption/lead__image-caption.css);
 
 /* INTRO SECTION */
 @import url(../blocks/intro/intro.css);
@@ -25,7 +25,7 @@
 @import url(../blocks/intro/__text/intro__text.css);
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/__statistic/table__statistic.css);
-@import url(../blocks/table/__statistic/_span/table__statistic_span_bold.css);
+@import url(../blocks/table/__statistic/_span/table__statistic_span.css);
 
 /* GALLERY SECTION */
 @import url(../blocks/gallery/gallery.css);
@@ -51,5 +51,5 @@
 /* FOOTER SECTION */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__links/footer__links.css);
-@import url(../blocks/footer/__link/footer_link.css);
+@import url(../blocks/footer/__link/footer__link.css);
 @import url(../blocks/footer/__author/footer__author.css);
