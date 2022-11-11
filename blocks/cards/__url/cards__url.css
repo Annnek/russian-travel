@@ -1,10 +1,10 @@
-.places__url {
+.cards__url {
   align-self: end;
   grid-area: url;
 }
 
 @media screen and (max-width: 320px) {
-  .places__url {
+  .cards__url {
     padding: 0 16px;
   }
 }

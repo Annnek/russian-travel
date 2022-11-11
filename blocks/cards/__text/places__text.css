@@ -1,26 +1,26 @@
-.places__text {
+.cards__text {
   font-size: 18px;
   line-height: 29px;
   font-weight: 400;
   margin: 0;
 }
 
-.places__text:not(:last-child) {
+.cards__text:not(:last-child) {
   margin-bottom: 27px;
 }
 
 @media screen and (max-width: 768px) {
-  .places__text {
+  .cards__text {
     font-size: 16px;
     line-height: 26px;
   }
-  .places__text:not(:last-child) {
+  .cards__text:not(:last-child) {
     margin-bottom: 25px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .places__text {
+  .cards__text {
     padding: 0 16px;
   }
 }
